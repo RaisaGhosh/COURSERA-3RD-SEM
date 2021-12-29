@@ -1,0 +1,62 @@
+<html>
+
+    <head>
+    <title>REVISION</title>
+
+    <script/javascript>
+    
+        function addParagraphText(){
+
+            var x=document.getElementById("name").value;
+
+            if(x.length==0)
+            document.getElementById("para").innerHTML="You didn't type anything!";
+            else
+            document.getElementById("para").innerHTML="hello "+x;
+        }
+    
+    </script>
+
+    </head>
+
+    <body>
+
+<h1 style="color: cadetblue;">This is a heading</h1>
+<p>this is a test paragraph</p>
+
+<a href="http://www.google.com"><br>this <em>is</em> <b>GOOGLE</b></a>
+
+<a href="http://www.google.com"><br>this is google 2<br><img src="https://www.lovethispic.com/uploaded_images/54830-Everything-Is-Going-To-Be-Alright.jpg"/></a>
+    
+<br><br>
+
+<table border="2" style="border: solid rgb(231, 117, 132); font-size: 200%;">
+    <tr>
+       <td>Monday</td><td>eat soup</td><td>workout for 20 mins</td><td>sleep</td>
+    </tr>
+    <tr>
+        <td>Tuesday</td><td>eat salad</td><td>workout for 10 mins</td><td>sleep</td>
+    </tr>
+    <tr>
+        <td>Wednesday</td><td>eat rice</td><td>workout for 40 mins</td><td>sleep</td>
+    </tr>
+    <tr>
+        <td>Thursday</td><td>eat roti</td><td>workout for 30 mins</td><td>sleep</td>
+    </tr>
+    <tr>
+        <td>Friday</td><td>eat junk</td><td>no workout</td><td>sleep</td>
+    </tr>
+</table>
+
+<body onload="alert('HELLO');"></body>
+<br><br>
+<input id=name type="text"/>
+<button onclick="addParagraphText();">CLICK ME</button>
+
+
+<p id="para" style="color: cornflowerblue; font-style: oblique;"></p>
+
+
+
+</body>
+</html>
