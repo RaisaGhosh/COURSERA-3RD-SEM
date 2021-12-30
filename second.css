@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(33, 26, 39);
+}
+
+.a-form{
+    text-align: center;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+h1{
+    color: rgb(239, 235, 243);
+    font-size: 400%;
+}
+
+.label{
+    text-align: justify;
+    font-size: 300%;
+    font-style: italic;
+    color: rgb(223, 205, 246);
+}
+
+.input{
+    background-color: rgb(233, 233, 233);
+    font-size: 250%;
+    font-style: italic;
+}
+
+.radio{
+    font-size: 250%;
+    font-style: italic;
+    color: rgb(223, 205, 246);
+}
+
+.feedback{
+    color: rgb(165, 162, 162);
+}
+
+.button{
+    border-radius: 60px;
+    padding: 30px;
+    cursor:pointer;
+    background-color: rgb(246, 215, 215);
+    background-position: center;
+    font-size: 250%;
+    font-style: oblique;
+}
+
+.output{
+    font-size: 300%;
+    color: rgb(195, 159, 190);
+    font-style: italic;
+}

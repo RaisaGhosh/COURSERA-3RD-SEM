@@ -1,0 +1,57 @@
+<html>
+    <head>
+     
+    <title>ASSIGNMENT 5</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="second.css">
+    <script type="text/javascript" src="first.js"></script>
+
+    </head>
+
+    <body>
+    <div class="a-form">
+
+    <h1><u>VOTING ELIGIBILITY CHECKER</u></h1>
+    <br><br>
+    <form action="#">
+
+        <table class=table>
+
+            <tr>
+                <td class="label">YOUR FIRST NAME :&ensp;</td>
+                <td ><input class="input" name="firstname" id="first" type="text" onblur="validatefirst()" placeholder="Raisa"></td>
+                <td class="feedback"><span id="firstprompt" >should be between 2-25 characters</span></td>
+            </tr>
+            <tr>
+                <td class="label">YOUR LAST NAME :&ensp;</td>
+                <td ><input class="input" name="lastname" id="last" type="text" onblur="validatelast()" placeholder="Ghosh"></td>
+                <td class="feedback"><span id="lastprompt">should be between 2-50 characters</span></td>
+            </tr>
+            <tr>
+                <td class="label">AGE :&ensp;</td>
+                <td ><input class="input" name="age" id="age" type="number" onblur="validateage()" min=1 max=100 placeholder="19"></td>
+                <td class="feedback"><span id="ageprompt">&nbsp;</span></td>
+            </tr>
+            <tr>
+                <td class="label">COUNTRY :&ensp;</td>
+                <td ><input class="input" name="country" id="country" type="text" value="INDIA" readonly></td>
+            </tr>
+            <tr>
+                <td class="label">RESIDING IN :&ensp;</td>
+                <td class="radio"><input name="residance" id="r1" type="radio" value="state">STATE</td>
+                <td class="radio"><input name="residance" id="r2" type="radio" value="union territory">UNION TERRITORY</td>
+            </tr>
+
+        </table>
+
+        <br><br><br><br>
+        <span class="button" onclick="vote()" >CAN I VOTE?</span>
+
+        <br><br><br><br><br><br>
+        <span class="output" id="output">&nbsp;</span>
+
+    </form>
+    </div>
+
+    </body>
+</html>
