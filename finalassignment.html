@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Educational registration form</title>
+    <link rel="stylesheet" type="text/css" href="final.css">
+    <script type="text/javascript" src="final.js"></script>
+   
+
+
+  </head>
+
+  <body>
+    <div class="main-block">
+     
+      <form action="submit.html" onsubmit="return validation();">
+
+        <div class="title">
+          <h2><strong><u>REGISTRATION FORM</u></strong></h2>
+          <h6>(This is a sample educational institution registration form)</h6>
+        </div>
+
+        <div class="info">
+          <input class="fname" type="text" id="name" placeholder="Full name(2-100 characters)" onblur="validatename()" required>
+          <input type="text" id="email" placeholder="Email(xyz@gmail.com)" onblur="validateemail()" required>
+          <input type="text" id="phone" placeholder="Phone number" onblur="validatephone()" required>
+          <input type="password" id="pass" placeholder="Password" required>
+          <input type="password" id="pass1" placeholder="Confirm Password" required>
+
+          <select>
+            <option value="course-type" selected>Choose course type</option>
+            <option value="short-courses">Short courses</option>
+            <option value="undergraduate">Undergraduate</option>
+            <option value="diploma">Diploma</option>
+            <option value="certificate">Certificate</option>
+            <option value="masters-degree">Masters degree</option>
+            <option value="postgraduate">Postgraduate</option>
+          </select>
+
+          <table>
+              <tr>
+                  <td><input name="residance" id="r1" type="radio" value="1">&ensp;&ensp;CHECK THIS IF YOU ARE ABOVE 18</input></td>
+                  <td><input name="residance" id="r2" type="radio" value="0">&ensp;&ensp;CHECK THIS IF YOU ARE BELOW 18</input></td>
+              </tr>
+          </table>
+          
+        </div>
+
+        <br>
+        
+        <div class="checkbox">
+          <input type="checkbox" name="checkbox" id="check"><span>I agree to the Privacy Policy.</span>
+        </div>
+
+        <button type="submit">Submit</button>
+
+      </form>
+
+    </div>
+
+  </body>
+</html>
